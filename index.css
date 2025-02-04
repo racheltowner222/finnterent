@@ -2,21 +2,21 @@ h1 {
     color: darkred;
 }
 
-/* Apply Flexbox to make links horizontal */
+/* Apply text-align to body for centering */
 body {
-    display: flex;                      /* Use Flexbox to arrange the links horizontally */
-    justify-content: center;            /* Center the links horizontally */
-    gap: 30px;                          /* Adds space between the links */
-    align-items: center;                /* Align items vertically */
-    margin-top: 20px;                   /* Space from top for links */
+    text-align: center;                /* Center all content horizontally */
+    margin-top: 20px;                   /* Space from the top */
 }
 
+/* Ensure each link behaves like a block, but still side by side */
 .bookmark-link {
+    display: inline-block;              /* Makes the links side by side */
     padding: 10px 20px;                 /* Adds padding around the link for spacing */
     background-color: #333;             /* Dark background for the link */
     color: white;                       /* White text color */
     font-size: 18px;                    /* Sets the font size */
     text-decoration: none;              /* Removes the underline from the link */
+    margin: 0 15px;                     /* Adds space between the links horizontally */
     border-radius: 5px;                 /* Rounded corners for the link */
 }
 
@@ -32,7 +32,7 @@ body {
 .bookmark-link:nth-child(2) {
     background-color: #34a853;           /* Green for the second link */
 }
+
 .bookmark-link:nth-child(3) {
     background-color: #fbbc05;           /* Yellow for the third link */
 }
-  
