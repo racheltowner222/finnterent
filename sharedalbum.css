@@ -1,15 +1,16 @@
 body{
     background-color: darkred;
 }
-ul.text-list{
+ul{
     background-color: white;
     display: flex;
     flex-direction: column; /* Ensures a vertical list */
     gap: 10px; /* Adds space between each item */
     align-items: center; /* Centers the list items */
     padding: 0;
-    list-style: none; }
-ul.text-list li {
+    list-style: none;
+ }
+li {
     background-color: white; /* White background */
     padding: 8px 12px; /* Small padding for better spacing */
     border-radius: 5px; /* Rounded corners */
