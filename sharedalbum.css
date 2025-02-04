@@ -27,13 +27,14 @@ h2{
     grid-template-columns: repeat(3, 1fr); /* 3 images per row */
     grid-template-rows: auto; /* Keeps the aspect ratio */
     gap: 10px; /* Space between images */
-    max-height: 100vh; /* Ensures it fits within the screen */
+    max-width: 800px; /* Ensures it fits within the screen */
     overflow: hidden; /* Prevents extra scroll */
+    margin: auto;
 }
 
 .image-grid img {
-    width: 100%; /* Makes images fit inside their grid area */
-    height: auto; /* Keeps the aspect ratio */
+    width: 200xpx; /* Makes images fit inside their grid area */
+    height: 200px; /* Keeps the aspect ratio */
     object-fit: cover; /* Prevents stretching */
-    max-height: 30vh; /* Limits image height */
+    max-height: 10px; /* Limits image height */
 }
