@@ -1,2 +1,25 @@
 h1{color:darkred;}
+body {
+    display: flex;
+    flex-direction: column;  /* Stack the links vertically */
+    align-items: center;     /* Center the links horizontally */
+    margin: 0;
+    padding: 0;
+}
+
+.bookmark-link {
+    margin-top: 20px;          /* Adds space between links */
+    padding: 10px 20px;        /* Adds padding around the link */
+    background-color: #333;    /* Dark background for the link */
+    color: white;              /* White text color */
+    font-size: 18px;           /* Sets the font size */
+    text-decoration: none;     /* Removes the underline from the link */
+    width: 200px;              /* Gives each link a fixed width */
+    text-align: center;        /* Centers the text inside the link */
+}
+
+.bookmark-link:hover {
+    background-color: #555;    /* Optional: Changes background color on hover */
+}
+
   
