@@ -2,6 +2,7 @@ body{
     background-color: darkred;
 }
 ul.text-list{
+    background-color: white;
     display: flex;
     flex-direction: column; /* Ensures a vertical list */
     gap: 10px; /* Adds space between each item */
@@ -30,17 +31,21 @@ h2{
 }
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
-    grid-template-rows: auto; /* Keeps the aspect ratio */
-    gap: 10px; /* Space between images */
-    max-width: 800px; /* Ensures it fits within the screen */
-    overflow: hidden; /* Prevents extra scroll */
-    margin: auto;
+    grid-template-columns: repeat(3, 1fr);  /* 3 images per row */
+    gap: 15px; /* Space between images */
+    padding: 10px;
+    max-width: 100%; /* Ensures the grid doesn't exceed container width */
+    overflow: hidden; /* Prevents images from overflowing */
+    margin: 0 auto; /* Centers the grid */
+    justify-items: center; /* Centers images in each grid cell */
+    max-height: 60vh; /* Limit height of the entire grid (adjust as needed) */
+    height: auto; /* Let the height adjust according to content */
 }
 
 .image-grid img {
-    width: 200xpx; /* Makes images fit inside their grid area */
-    height: 200px; /* Keeps the aspect ratio */
-    object-fit: cover; /* Prevents stretching */
-    max-height: 10px; /* Limits image height */
+    width: 100%; /* Makes sure images scale inside their grid area */
+    height: 100%; /* Adjust height of the image to fit the grid cell */
+    object-fit: cover; /* Ensures the image fills the grid cell without distortion */
+    max-width: 250px; /* Limits image width to 250px */
+    max-height: 250px; /* Limits image height to 250px */
 }
