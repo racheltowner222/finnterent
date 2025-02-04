@@ -1,5 +1,5 @@
 h1 {
-    color: darkred;
+    color: white;
 }
 
 /* Apply text-align to body for centering */
@@ -8,6 +8,7 @@ body {
     margin-top: 20px;                   /* Space from the top */
     margin: 0;                          /* Remove any default margin */
     padding-top: 50px;                  /* Adds space at the top for the links */
+    background-color: darkred;
 }
 
 /* Container for the links, aligned horizontally */
@@ -21,7 +22,7 @@ body {
 .bookmark-link {
     padding: 10px 20px;                 /* Adds padding around the link for spacing */
     background-color: #333;             /* Dark background for the link */
-    color: white;                       /* White text color */
+    color: black;                       /* White text color */
     font-size: 18px;                    /* Sets the font size */
     text-decoration: none;              /* Removes the underline from the link */
     border-radius: 5px;                 /* Rounded corners for the link */
@@ -33,14 +34,14 @@ body {
 
 /* Optional: Styling for each link, you can tweak this */
 .bookmark-link:nth-child(1) {
-    background-color: #1a73e8;           /* Blue for the first link */
+    background-color: whitesmoke;           /* Blue for the first link */
 }
 
 .bookmark-link:nth-child(2) {
-    background-color: #34a853;           /* Green for the second link */
+    background-color: whitesmoke;           /* Green for the second link */
 }
 
 .bookmark-link:nth-child(3) {
-    background-color: #fbbc05;           /* Yellow for the third link */
+    background-color: whitesmoke;           /* Yellow for the third link */
 }
 
