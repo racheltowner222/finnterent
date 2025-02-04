@@ -44,4 +44,6 @@ body {
 .bookmark-link:nth-child(3) {
     background-color: whitesmoke;           /* Yellow for the third link */
 }
-
+img {
+    margin-top: 30px;  /* Adds space above the image */
+    margin-bottom: 30px; }
