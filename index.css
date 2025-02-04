@@ -1,25 +1,31 @@
 h1{color:darkred;}
-body {
-    display: flex;
-    flex-direction: column;  /* Stack the links vertically */
-    align-items: center;     /* Center the links horizontally */
-    margin: 0;
-    padding: 0;
+.bookmark-link {
+    display: block;               /* Makes the link a block element for easier positioning */
+    position: fixed;              /* Fixes the link at the top of the page */
+    left: 50%;                    /* Centers the link horizontally */
+    transform: translateX(-50%);  /* Ensures perfect centering */
+    padding: 10px 20px;           /* Adds padding around the link for spacing */
+    background-color: #333;       /* Dark background for the link */
+    color: white;                 /* White text color */
+    font-size: 18px;              /* Sets the font size */
+    text-decoration: none;        /* Removes the underline from the link */
+    z-index: 1000;                /* Makes sure the link stays on top of other content */
 }
 
-.bookmark-link {
-    margin-top: 20px;          /* Adds space between links */
-    padding: 10px 20px;        /* Adds padding around the link */
-    background-color: #333;    /* Dark background for the link */
-    color: white;              /* White text color */
-    font-size: 18px;           /* Sets the font size */
-    text-decoration: none;     /* Removes the underline from the link */
-    width: 200px;              /* Gives each link a fixed width */
-    text-align: center;        /* Centers the text inside the link */
+.bookmark-link:nth-child(1) {
+    top: 10px;                    /* First link: 10px from the top */
+}
+
+.bookmark-link:nth-child(2) {
+    top: 50px;                    /* Second link: 50px from the top */
+}
+
+.bookmark-link:nth-child(3) {
+    top: 90px;                    /* Third link: 90px from the top */
 }
 
 .bookmark-link:hover {
-    background-color: #555;    /* Optional: Changes background color on hover */
+    background-color: #555;      /* Optional: Changes background color on hover */
 }
 
   
