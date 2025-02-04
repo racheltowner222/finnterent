@@ -1,19 +1,2 @@
 h1{color:darkred;}
-.bookmark-link {
-    display: block;              /* Makes the link a block element for easier positioning */
-    position: fixed;             /* Fixes the link at the top of the page */
-    top: 0;                      /* Positions it at the very top of the viewport */
-    left: 50%;                   /* Centers the link horizontally */
-    transform: translateX(-50%); /* Ensures perfect centering */
-    padding: 10px 20px;          /* Adds padding around the link for spacing */
-    background-color: #333;      /* Dark background for the link */
-    color: white;                /* White text color */
-    font-size: 18px;             /* Sets the font size */
-    text-decoration: none;       /* Removes the underline from the link */
-    z-index: 1000;               /* Makes sure the link stays on top of other content */
-  }
-  
-  .bookmark-link:hover {
-    background-color: #555;      /* Optional: Changes background color on hover */
-  }
   
