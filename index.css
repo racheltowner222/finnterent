@@ -1,31 +1,38 @@
-h1{color:darkred;}
+h1 {
+    color: darkred;
+}
+
+/* Apply Flexbox to make links horizontal */
+body {
+    display: flex;                      /* Use Flexbox to arrange the links horizontally */
+    justify-content: center;            /* Center the links horizontally */
+    gap: 30px;                          /* Adds space between the links */
+    align-items: center;                /* Align items vertically */
+    margin-top: 20px;                   /* Space from top for links */
+}
+
 .bookmark-link {
-    display: block;               /* Makes the link a block element for easier positioning */
-    position: fixed;              /* Fixes the link at the top of the page */
-    left: 50%;                    /* Centers the link horizontally */
-    transform: translateX(-50%);  /* Ensures perfect centering */
-    padding: 10px 20px;           /* Adds padding around the link for spacing */
-    background-color: #333;       /* Dark background for the link */
-    color: white;                 /* White text color */
-    font-size: 18px;              /* Sets the font size */
-    text-decoration: none;        /* Removes the underline from the link */
-    z-index: 1000;                /* Makes sure the link stays on top of other content */
-}
-
-.bookmark-link:nth-child(1) {
-    top: 10px;                    /* First link: 10px from the top */
-}
-
-.bookmark-link:nth-child(2) {
-    top: 50px;                    /* Second link: 50px from the top */
-}
-
-.bookmark-link:nth-child(3) {
-    top: 90px;                    /* Third link: 90px from the top */
+    padding: 10px 20px;                 /* Adds padding around the link for spacing */
+    background-color: #333;             /* Dark background for the link */
+    color: white;                       /* White text color */
+    font-size: 18px;                    /* Sets the font size */
+    text-decoration: none;              /* Removes the underline from the link */
+    border-radius: 5px;                 /* Rounded corners for the link */
 }
 
 .bookmark-link:hover {
-    background-color: #555;      /* Optional: Changes background color on hover */
+    background-color: #555;             /* Optional: Changes background color on hover */
 }
 
+/* Optional: Styling for each link, you can tweak this */
+.bookmark-link:nth-child(1) {
+    background-color: #1a73e8;           /* Blue for the first link */
+}
+
+.bookmark-link:nth-child(2) {
+    background-color: #34a853;           /* Green for the second link */
+}
+.bookmark-link:nth-child(3) {
+    background-color: #fbbc05;           /* Yellow for the third link */
+}
   
