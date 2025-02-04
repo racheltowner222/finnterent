@@ -1,16 +1,22 @@
 body{
     background-color: darkred;
 }
-ul{
-    background-color: whitesmoke;
-    text-align: center;
-    list-style: none;
-    padding: 0
-}
-ul li {
-    display: inline-block;
-    padding: 5 px 10 px;
-    margin: 5 px;
+ul.text-list{
+    display: flex;
+    flex-direction: column; /* Ensures a vertical list */
+    gap: 10px; /* Adds space between each item */
+    align-items: center; /* Centers the list items */
+    padding: 0;
+    list-style: none; }
+ul.text-list li {
+    background-color: white; /* White background */
+    padding: 8px 12px; /* Small padding for better spacing */
+    border-radius: 5px; /* Rounded corners */
+    max-width: fit-content; /* Ensures background wraps only around text */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Light shadow */
+    font-size: 18px; /* Adjusts text size */
+    font-weight: bold; /* Makes text stand out */
+    text-align: center; /* Centers text inside the box */
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h1{
