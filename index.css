@@ -6,17 +6,24 @@ h1 {
 body {
     text-align: center;                /* Center all content horizontally */
     margin-top: 20px;                   /* Space from the top */
+    margin: 0;                          /* Remove any default margin */
+    padding-top: 50px;                  /* Adds space at the top for the links */
+}
+
+/* Container for the links, aligned horizontally */
+.link-container {
+    display: flex;                     /* Uses flexbox to align links horizontally */
+    justify-content: center;           /* Centers the links horizontally */
+    gap: 20px;                         /* Space between links */
 }
 
 /* Ensure each link behaves like a block, but still side by side */
 .bookmark-link {
-    display: inline-block;              /* Makes the links side by side */
     padding: 10px 20px;                 /* Adds padding around the link for spacing */
     background-color: #333;             /* Dark background for the link */
     color: white;                       /* White text color */
     font-size: 18px;                    /* Sets the font size */
     text-decoration: none;              /* Removes the underline from the link */
-    margin: 0 15px;                     /* Adds space between the links horizontally */
     border-radius: 5px;                 /* Rounded corners for the link */
 }
 
@@ -36,3 +43,4 @@ body {
 .bookmark-link:nth-child(3) {
     background-color: #fbbc05;           /* Yellow for the third link */
 }
+
