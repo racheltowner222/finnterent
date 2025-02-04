@@ -1,7 +1,9 @@
 h1 {
     color: white;
 }
-
+h2{
+    color: white;
+}
 /* Apply text-align to body for centering */
 body {
     text-align: center;                /* Center all content horizontally */
