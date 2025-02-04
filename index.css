@@ -1,6 +1,4 @@
-h1{
-    color:darkred
-}
+h1{color:darkred;}
 .bookmark-link {
     display: block;              /* Makes the link a block element for easier positioning */
     position: fixed;             /* Fixes the link at the top of the page */
