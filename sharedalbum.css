@@ -4,4 +4,21 @@ body{
 ul{
     background-color: whitesmoke;
     text-align: center;
+    list-style: none;
+    padding: 0
+}
+ul li {
+    display: inline-block;
+    padding: 5 px 10 px;
+    margin: 5 px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    text-align: center;
+    color:whitesmoke;
+    font-family: cursive;
+}
+h2{
+    text-align: center;
+    color: whitesmoke;
 }
