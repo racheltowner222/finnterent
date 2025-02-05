@@ -2,7 +2,7 @@ body{
     background-color: darkred;
 }
 ul{
-    background-color: white;
+    background-color: rgb(226, 183, 190);
     display: flex;
     flex-direction: column; /* Ensures a vertical list */
     gap: 10px; /* Adds space between each item */
