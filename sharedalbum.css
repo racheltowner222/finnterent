@@ -32,21 +32,15 @@ h2{
 }
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);  /* 3 images per row */
-    gap: 15px; /* Space between images */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
     padding: 10px;
-    max-width: 100%; /* Ensures the grid doesn't exceed container width */
-    overflow: hidden; /* Prevents images from overflowing */
-    margin: 0 auto; /* Centers the grid */
-    justify-items: center; /* Centers images in each grid cell */
-    max-height: 60vh; /* Limit height of the entire grid (adjust as needed) */
-    height: auto; /* Let the height adjust according to content */
+    max-width: 100%;
+    margin: 0 auto;
+    justify-items: center;
 }
-
 .image-grid img {
-    width: 100%; /* Makes sure images scale inside their grid area */
-    height: 100%; /* Adjust height of the image to fit the grid cell */
-    object-fit: cover; /* Ensures the image fills the grid cell without distortion */
-    max-width: 250px; /* Limits image width to 250px */
-    max-height: 250px; /* Limits image height to 250px */
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
